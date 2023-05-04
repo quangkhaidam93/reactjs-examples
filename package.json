@@ -1,15 +1,21 @@
 {
-  "name": "react-js-test-everything",
+  "name": "reactjs-examples",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack serve  --hot --open",
-    "build": "webpack --config webpack.config.js --mode production"
+    "start": "webpack serve  --hot --open --mode=development",
+    "build": "webpack --config webpack.config.js --mode=production",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "dependenciesComments": {
+    "eslint-config-prettier": "turn off all rules that are unnecessary or might conflict with Prettier.",
+    "eslint-plugin-react": "run prettier as an ESLint rule"
+  },
   "dependencies": {
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
@@ -18,10 +24,18 @@
     "@babel/core": "^7.17.8",
     "@babel/preset-env": "^7.16.11",
     "@babel/preset-react": "^7.16.7",
+    "@types/react": "^18.2.4",
+    "@types/react-dom": "^18.2.3",
+    "@typescript-eslint/eslint-plugin": "^5.59.2",
+    "@typescript-eslint/parser": "^5.59.2",
     "babel-loader": "^8.2.3",
     "css-loader": "^6.7.1",
+    "eslint": "^8.39.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-react": "^7.32.2",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.0",
+    "prettier": "^2.8.8",
     "style-loader": "^3.3.1",
     "webpack": "^5.70.0",
     "webpack-cli": "^4.9.2",
