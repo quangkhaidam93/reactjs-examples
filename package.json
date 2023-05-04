@@ -13,8 +13,12 @@
   "author": "",
   "license": "ISC",
   "dependenciesComments": {
-    "eslint-config-prettier": "turn off all rules that are unnecessary or might conflict with Prettier.",
-    "eslint-plugin-react": "run prettier as an ESLint rule"
+    "eslint-config-prettier": "a ESLint plugin that turn off all rules that are unnecessary or might conflict with Prettier.",
+    "eslint-plugin-react": "a ESLint plugin that run prettier as an ESLint rule",
+    "@babel/preset-env": "a Babel preset that allow to use latest Javascript syntax",
+    "@babel/preset-react": "a Babel preset for React",
+    "@typescript-eslint/eslint-plugin": "an ESLint plugin which provides lint rules for TypeScript codebases.",
+    "@typescript-eslint/parser": "an ESLint parser which leverages TypeScript ESTree to allow for ESLint to lint TypeScript source code."
   },
   "dependencies": {
     "react": "^17.0.2",
